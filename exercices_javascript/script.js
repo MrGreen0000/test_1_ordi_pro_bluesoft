@@ -8,7 +8,6 @@ function updateName() {
 }
 
 
-document.addEventListener('DOMContentLoaded', () => {
     function createParagraph() {
         const para = document.createElement('p');
         para.textContent = 'You clicked the button!';
@@ -22,4 +21,3 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', createParagraph);
     }
 
-});
