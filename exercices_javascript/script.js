@@ -1,5 +1,25 @@
-const button = document.getElementById('click-button');
+const para = document.querySelector('p');
 
-button.addEventListener("click", function() {
-    alert("hello world !");
+para.addEventListener('click', updateName);
+
+function updateName() {
+    const name = prompt('Enter a new name');
+    para.textContent = `Player 1: ${name}`;
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    function createParagraph() {
+        const para = document.createElement('p');
+        para.textContent = 'You clicked the button!';
+        document.body.appendChild(para);
+    }
+
+
+    const buttons = document.querySelectorAll('button');
+
+    for (const button of buttons) {
+        button.addEventListener('click', createParagraph);
+    }
+
 });
