@@ -7,8 +7,9 @@ function updateName() {
     para.textContent = `Player 1: ${name}`;
 }
 
-
-    function createParagraph() {
+//Function: creates a new paragraph and appends it to the bottom of the HTML body.
+  
+function createParagraph() {
         const para = document.createElement('p');
         para.textContent = 'You clicked the button!';
         document.body.appendChild(para);
